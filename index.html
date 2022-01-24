@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Get Discount | Coding Ninjas Courses</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Modak");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #151515;
+    text-align: center
+}
+
+.text {
+    height: 200px;
+    display: inline-block;
+    font-size: 200px;
+    line-height: 84%;
+    font-family: Modak;
+    padding-left: 7px;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-top: calc(15vh - 100px);
+    text-shadow: 7px 7px 0px #d2d2d22e;
+}
+
+.text-1 {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='200px' height='200px' viewBox='0 0 400 400'%3e%3cdefs%3e%3cfilter id='filter' width='400px' height='400px' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3e%3cfeFlood flood-color='%23f5576c' flood-opacity='1' x='0' y='0' width='250px' height='250px' result='flood3'%3e%3c/feFlood%3e%3cfeFlood flood-color='%23f093fb' flood-opacity='1' x='150px' y='150px' width='250px' height='250px' result='flood4'%3e%3c/feFlood%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood3' edgeMode='none' result='blur1'%3e%3c/feGaussianBlur%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood4' edgeMode='none' result='blur2'%3e%3c/feGaussianBlur%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur2' in2='SourceGraphic' result='blend5'%3e%3c/feBlend%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur1' in2='blend5' result='blend6'%3e%3c/feBlend%3e%3c/filter%3e%3c/defs%3e%3crect width='400' height='400' x='0' y='0' fill='%23fee140' filter='url(%23filter)'%3e%3c/rect%3e%3c/svg%3e");
+}
+
+.text-2 {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='200px' height='200px' viewBox='0 0 400 400'%3e%3cdefs%3e%3cfilter id='filter' width='400px' height='400px' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3e%3cfeFlood flood-color='%238fd3f4' flood-opacity='1' x='0' y='0' width='250px' height='250px' result='flood3'%3e%3c/feFlood%3e%3cfeFlood flood-color='%2396e6a1' flood-opacity='1' x='150px' y='150px' width='250px' height='250px' result='flood4'%3e%3c/feFlood%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood3' edgeMode='none' result='blur1'%3e%3c/feGaussianBlur%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood4' edgeMode='none' result='blur2'%3e%3c/feGaussianBlur%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur2' in2='SourceGraphic' result='blend5'%3e%3c/feBlend%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur1' in2='blend5' result='blend6'%3e%3c/feBlend%3e%3c/filter%3e%3c/defs%3e%3crect width='400' height='400' x='0' y='0' fill='%23d4fc79' filter='url(%23filter)'%3e%3c/rect%3e%3c/svg%3e");
+}
+
+.text-3 {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='200px' height='200px' viewBox='0 0 400 400'%3e%3cdefs%3e%3cfilter id='filter' width='400px' height='400px' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3e%3cfeFlood flood-color='%23cd9cf2' flood-opacity='1' x='0' y='0' width='250px' height='250px' result='flood3'%3e%3c/feFlood%3e%3cfeFlood flood-color='%23c2e9fb' flood-opacity='1' x='150px' y='150px' width='250px' height='250px' result='flood4'%3e%3c/feFlood%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood3' edgeMode='none' result='blur1'%3e%3c/feGaussianBlur%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood4' edgeMode='none' result='blur2'%3e%3c/feGaussianBlur%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur2' in2='SourceGraphic' result='blend5'%3e%3c/feBlend%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur1' in2='blend5' result='blend6'%3e%3c/feBlend%3e%3c/filter%3e%3c/defs%3e%3crect width='400' height='400' x='0' y='0' fill='%2366a6ff' filter='url(%23filter)'%3e%3c/rect%3e%3c/svg%3e");
+}
+
+.text-4 {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='200px' height='200px' viewBox='0 0 400 400'%3e%3cdefs%3e%3cfilter id='filter' width='400px' height='400px' filterUnits='objectBoundingBox' primitiveUnits='userSpaceOnUse' color-interpolation-filters='sRGB'%3e%3cfeFlood flood-color='%230fd850' flood-opacity='1' x='0' y='0' width='250px' height='250px' result='flood3'%3e%3c/feFlood%3e%3cfeFlood flood-color='%2320E2D7' flood-opacity='1' x='80px' y='160px' width='250px' height='250px' result='flood4'%3e%3c/feFlood%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood3' edgeMode='none' result='blur1'%3e%3c/feGaussianBlur%3e%3cfeGaussianBlur stdDeviation='50 50' x='0%25' y='0%25' width='100%25' height='100%25' in='flood4' edgeMode='none' result='blur2'%3e%3c/feGaussianBlur%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur2' in2='SourceGraphic' result='blend5'%3e%3c/feBlend%3e%3cfeBlend mode='normal' x='0%25' y='0%25' width='100%25' height='100%25' in='blur1' in2='blend5' result='blend6'%3e%3c/feBlend%3e%3c/filter%3e%3c/defs%3e%3crect width='400' height='400' x='0' y='0' fill='%23fbed96' filter='url(%23filter)'%3e%3c/rect%3e%3c/svg%3e");
+}
+
+    </style>
+    <style>
+      .site-footer
+{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links.inline li
+{
+  display:inline-block
+}
+.site-footer .social-icons
+{
+  text-align:right
+}
+.site-footer .social-icons a
+{
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text
+{
+  margin:0
+}
+@media (max-width:991px)
+{
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px)
+{
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons
+{
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li
+{
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title
+{
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#96a2b2;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a{
+  background-color:#eceeef;
+  color:#818a91;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover
+{
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a
+{
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover
+{
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover
+{
+  background-color:#00aced
+}
+.social-icons a.linkedin:hover
+{
+  background-color:#007bb6
+}
+.social-icons a.dribbble:hover
+{
+  background-color:#ea4c89
+}
+@media (max-width:767px)
+{
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">CN Santa</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#1">Courses</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#2">Events</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Join Us
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li style="background-color:pink;"><a class="dropdown-item" onclick="location.href='https://t.me/codingninjas_official'"><b>Official CN community on Telegram</b></a></li>
+                  <li style="background-color:pink;"><a class="dropdown-item" onclick="location.href='https://t.me/cnsanta'"><b>Stay updated about CN events</b></a></li>
+                  <li style="background-color:pink;"><a class="dropdown-item" onclick="location.href='https://discord.gg/cMuY8uGw'"><b>CN community on Discord</b></a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li style="background-color:pink;"><a class="dropdown-item" onclick="location.href='https://campus.codingninjas.com/?utm_source=campus-ambassador&utm_medium=Referral&utm_campaign=cn3890'"><b>as Campus Ambassador</b></a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                  Contact
+                </button>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="4.jpg" class="d-block w-100" style="height:666px" alt="...">
+            <div class="carousel-caption d-none d-md-block" style="background-color:pink;">
+              <h5 style="color:black">Coding Ninjas January Scholarship Test</h5>
+              <p style="color:black">The Scholarship of the year is live. Stand a chance to get upto 100% scholarship. Use Coupon Code : <b>SCTNCRBPDX</b></p>
+              <p><button onclick="location.href='https://www.codingninjas.com/landing/scholarship-test/?utm_source=campus-ambassador&utm_medium=scholarship-jan&utm_campaign=cn3890'" type="button">Register Now</button></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="2.jpeg" class="d-block w-100" style="height:666px" alt="...">
+            <div class="carousel-caption d-none d-md-block" style="background-color:pink;">
+              <h5 style="color:black">Get assured 42% discount on all Coding Ninjas Courses</h5>
+              <p style="color:black">Don't miss on this amazing opportunity to enroll in such quality courses with the vision being "Talent meets opportunity" </p>
+              <p><button onclick="location.href='https://www.codingninjas.com/?referralCode=LNBOF'" type="button">Enroll Now</button></p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="1.jpeg" class="d-block w-100" style="height:666px" alt="...">
+            <div class="carousel-caption d-none d-md-block" style="background-color:pink;">
+              <h5 style="color:black">Join as Ninja Entrepreneur</h5>
+              <p style="color:black">Want to join Coding Ninjas as a Campus Ambassador of your college?</p>
+              <p><button onclick="location.href='https://campus.codingninjas.com/?utm_source=campus-ambassador&utm_medium=Referral&utm_campaign=cn3890'" type="button">Apply Now</button></p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <section id="1">
+      <div class="text text-1">CO</div><div class="text text-2">UR</div><div class="text text-3">SE</div><div class="text text-4">S</div><div class="text text-2"></div>
+      <div class="container">
+        <img src="Capture.PNG" style="height:400px;width:600px;"></img>
+        <img src="51.PNG" style="height:400px;width:600px;padding-left:20px"></img>
+      </div>
+    </section>
+    <section style="background:white">
+      <div class="row" style="padding-left:315px;padding-top:20px">
+      <div class="card" style="width: 18rem;">
+        <img src="21.png" class="card-img-top" style="height:135px" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="color:red"><b>DS & Algo</b></h5>
+          <p class="card-text"> Data structures and algorithms is all about organising the information and finding the most efficient approach to solve a problem</p>
+          
+        </div>
+      </div>
+      <div class="card" style="margin-left:20px;width: 18rem;">
+        <img src="22.png" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="color:red"><b>Competitive Programming</b></h5>
+          <p class="card-text">Learn to write most efficient programmes & get ready to crack contests on popular CP platforms such as Codeforces</p>
+          
+        </div>
+      </div>
+      <div class="card" style="margin-left:20px;width: 18rem;">
+        <img src="23.png" class="card-img-top" alt="..." style="height:135px">
+        <div class="card-body">
+          <h5 class="card-title" style="color:red"><b>Interview Preparation</b></h5>
+          <p class="card-text">Ideal for students preparing for placements/Internships. Coding Ninjas will help you achieve your goal to land in your dream company</p>
+          
+        </div>
+      </div>
+    </div>
+    
+    <div class="row" style="padding-left:315px;padding-top:20px;padding-bottom:20px">
+      <div class="card" style="width: 18rem;">
+        <img src="24.jpg" class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title" style="color:red"><b>Web Development</b></h5>
+          <p class="card-text">Learn to build fully functional web applications. Learn back-end, front-end and full stack development from experts</p>
+          
+        </div>
+      </div>
+      <div class="card" style="margin-left:20px;width: 18rem;">
+        <img src="25.jpg" class="card-img-top" alt="..." style="height:145px">
+        <div class="card-body">
+          <h5 class="card-title" style="color:red"><b>Data Science & ML</b></h5>
+          <p class="card-text">Premium course on deriving statistics from data, implementing machine learning and mastering data analytics</p>
+          
+        </div>
+      </div>
+      <div class="card" style="margin-left:20px;width: 18rem;">
+        <img src="26.jfif" class="card-img-top" alt="..." style="height:145px">
+        <div class="card-body">
+          <h5 class="card-title" style="color:red"><b>Android Development</b></h5>
+          <p class="card-text">Learn how to build user-friendly and interactive android applications with Kotlin with real world projects</p>
+          
+        </div>
+      </div>
+    </div>
+    </section>
+
+    <section style="background:white">
+      <h3 class="text-center"><b><mark style="color:green">Coding Ninjas</mark></b> provide courses for each and every aspect, be it development, programming, preparation.</h3>
+      <div style="border:10px solid green;margin-top:15px;margin-bottom:15px;width:800px;position:relative;margin-left:350px;padding-top:10px">
+        <h4 class="text-center">You may avail <b><mark style="color:red">42% off</mark></b> on any of their courses using link below</h4>
+      </div>
+      <a onclick="location.href='https://www.codingninjas.com/?referralCode=LNBOF'" class="btn btn-success" style="margin-bottom:10px">Explore Courses & Enroll Now</a>
+      
+    </section>
+
+    <section id="2" style="padding-top:50px">
+      <div class="text text-1">E</div><div class="text text-2">V</div><div class="text text-3">E</div><div class="text text-4">N</div><div class="text text-2">TS</div>
+    </section>
+    
+    <section style="background:white">
+      <div class="row" style="padding-left:315px;padding-top:20px">
+      <div class="card" style="width: 18rem;">
+        <img src="3.jpg" class="card-img-top" style="height:250px" alt="...">
+        <div class="card-body">
+          <h2 class="card-title" style="color:red"><b>CNSAT'22</b></h2>
+          <h3 class="card-text">Coding Ninjas January Scholarship Test</h3>
+          <h6 class="card-text">Test Date/Time : 23rd & 24th January, 2022 at 9PM</h6>
+          <p class="card-text">Use Coupon Code <h4><mark><b>SCTNCRBPDX</b></mark></h4> to register at 49/-</p>
+          <a onclick="location.href='https://www.codingninjas.com/landing/scholarship-test/?utm_source=campus-ambassador&utm_medium=scholarship-jan&utm_campaign=cn3890'" class="btn btn-success" style="margin-bottom:10px">Register Here >></a>
+          
+        </div>
+      </div>
+
+      <div class="container" style="margin-left:20px;width: 18rem;">
+        <img src="61.jpeg" style="height:650px;width:650px;padding-bottom:20px"></img>
+          
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+  <section id="3" style="padding-top:50px">
+    <div class="text text-1">Nin</div><div class="text text-2">ja</div><div class="text text-3">-Co</div><div class="text text-4">de</div><div class="text text-2">r</div>
+  </section>
+  
+  <section style="background:white">
+    <h3 class="text-center" style="padding-top:10px">Become the face of Coding Ninjas in your Campus</h3>
+    <div style="border:10px solid green;margin-top:15px;margin-bottom:15px;width:800px;position:relative;margin-left:350px;padding-top:10px">
+      <h4 class="text-center">Join as a <b><mark style="color:red">Campus Ambassador</mark></b> of Coding Ninjas under Ninja Entrepreneurship Programme</h4>
+    </div>
+    <a onclick="location.href='https://campus.codingninjas.com/?utm_source=campus-ambassador&utm_medium=Referral&utm_campaign=cn3890'" class="btn btn-success" style="margin-bottom:50px">Apply Here >></a>
+    
+  
+
+  <!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Contact</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Mail your queries(if any) to <mark><b>bodeleyash5@gmail.com</b></mark>
+        <p>Join the telegram group "cnsanta" for regular updates</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Site footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Coding Ninjas is an Ed-tech company which provides qualtiy courses about technology and premium courses to prepare oneself for placements/internships.
+            This webpage has been made under Ninja Entrepreneurship programme of Coding Ninjas to create awareness among students about courses offered by Coding Ninjas and the events they come up with.
+          </p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Follow Coding Ninjas on</h6>
+          <ul class="footer-links">
+            <li><a onclick="location.href='https://www.facebook.com/codingninjas/'">Facebook</a></li>
+            <li><a onclick="location.href='https://twitter.com/CodingNinjasOff'">Twitter</a></li>
+            <li><a onclick="location.href='https://www.linkedin.com/company/coding-ninjas-india/'">LinkedIn</a></li>
+            <li><a onclick="location.href='https://www.youtube.com/channel/UCZJlMUYdbtzQ8tVfLvK1KvQ'">YouTube</a></li>
+            <li><a onclick="location.href='https://t.me/codingninjas_official'">Telegram</a></li>
+            
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="#1">Courses</a></li>
+            <li><a href="#2">Events</a></li>
+            <li><a href="#3">Join Us</a></li>
+            <li> <a class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+              Contact
+            </a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">
+            Made by Gaurav Jayant Bodele. Follow me on >>
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" onclick="location.href='https://www.facebook.com/gaurav.bodele/'"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="github" onclick="location.href='https://github.com/04bodelegaurav'"><i class="fa fa-github"></i></a></li>
+            <li><a class="YouTube" onclick="location.href='https://www.youtube.com/channel/UCGXvAp-YhxYp7XaCVc29Rrg'"><i class="fa fa-youtube"></i></a></li>
+            <li><a class="linkedin" onclick="location.href='https://www.linkedin.com/in/04bodelegaurav/'"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  </body>
+</html>
